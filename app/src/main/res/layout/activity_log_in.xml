@@ -15,12 +15,11 @@
     android:layout_gravity="end">
 
     <ImageView
-        android:src="@android:drawable/ic_dialog_alert"
+        android:src="@mipmap/ic_launcher"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:layout_weight="0.37"
-        tools:src="@mipmap/ic_launcher" />
+        android:id="@+id/imageView3"
+        android:layout_weight="0.36" />
 
     <EditText
         android:layout_width="match_parent"
