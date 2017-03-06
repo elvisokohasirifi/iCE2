@@ -34,4 +34,9 @@ public class LogIn extends Activity {
         Toast myToast = Toast.makeText(getApplicationContext(), "It worked", Toast.LENGTH_LONG);
         myToast.show();
     }
+
+    public void signUp(View v){
+        //super.onCreate(savedInstanceState);
+        setContentView(R.layout.signup);
+    }
 }
