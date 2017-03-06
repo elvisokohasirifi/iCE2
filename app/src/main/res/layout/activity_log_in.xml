@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_log_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sirelvis.ice.LogIn"
+    tools:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_gravity="end">
+
+    <ImageView
+        android:src="@android:drawable/ic_dialog_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_weight="0.37"
+        tools:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:hint="Email/Phone"
+        tools:inputType="textEmailAddress|phone"
+        android:layout_weight="0.05"
+        tools:fontFamily="sans-serif"
+        tools:paddingTop="16dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_weight="0.05"
+        android:hint="Password"
+        tools:fontFamily="sans-serif"
+        tools:paddingTop="16dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="Sign In"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/logInBut"
+        tools:capitalize="words"
+        tools:textStyle="bold"
+        tools:foreground="@color/colorAccent"
+        android:background="@android:color/background_light"
+        tools:paddingTop="16dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="logIn (LogIn)" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:weightSum="1"
+        android:paddingTop="20dp"
+        android:layout_weight="0.11">
+
+        <TextView
+            android:text="Sign Up"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            tools:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            tools:paddingTop="10dp"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:onClick="signUp" />
+
+        <TextView
+            android:text="Forgot Password?"
+            android:layout_width="217dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView5"
+            tools:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            tools:paddingTop="10dp"
+            android:textAlignment="viewEnd"
+            tools:textColorHighlight="@color/colorAccent"
+            android:clickable="true"
+            android:onClick="sendPassword" />
+
+    </LinearLayout>
+
+</LinearLayout>
