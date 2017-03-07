@@ -16,14 +16,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".layout.Welcome"
+            android:name=".Welcome"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_welcome"
-            android:parentActivityName=".LogIn"
             android:theme="@style/FullscreenTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.sirelvis.ice.LogIn" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

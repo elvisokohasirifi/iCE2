@@ -1,4 +1,4 @@
-package com.example.sirelvis.ice.layout;
+package com.example.sirelvis.ice;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
@@ -7,10 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.MenuItem;
-import android.support.v4.app.NavUtils;
-
-import com.example.sirelvis.ice.R;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -92,14 +88,10 @@ public class Welcome extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_welcome);
-        ActionBar actionBar = getActionBar();
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-        }
 
         mVisible = true;
-        //mControlsView = findViewById(R.id.fullscreen_content_controls);
-       // mContentView = findViewById(R.id.fullscreen_content);
+        mControlsView = findViewById(R.id.fullscreen_content_controls);
+        mContentView = findViewById(R.id.fullscreen_content);
 
 
         // Set up the user interaction to manually show or hide the system UI.
@@ -113,7 +105,7 @@ public class Welcome extends Activity {
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        //findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
 
     @Override
@@ -124,17 +116,6 @@ public class Welcome extends Activity {
         // created, to briefly hint to the user that UI controls
         // are available.
         delayedHide(100);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == android.R.id.home) {
-            // This ID represents the Home or Up button.
-            NavUtils.navigateUpFromSameTask(this);
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     private void toggle() {

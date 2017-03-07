@@ -6,12 +6,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.sirelvis.ice.layout.Welcome;
+import com.example.sirelvis.ice.Welcome;
 
 public class LogIn extends Activity {
 
@@ -19,17 +20,18 @@ public class LogIn extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_log_in);
-        //showed = (TextView) findViewById(R.id.display);
         final Button logIn = (Button) findViewById(R.id.logInBut);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent welcome = new Intent(LogIn.this, Welcome.class);
                 startActivity(welcome);
-                finish();
+               // finish();
             }
-        }, 5000);
+        }, 3000);
+
     }
 
     public void logIn(View v){
