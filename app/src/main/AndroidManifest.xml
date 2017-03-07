@@ -17,7 +17,12 @@
         </activity>
         <activity
             android:name=".LogIn"
-            android:label="Log In"></activity>
+            android:label="Log In">
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="Sign Up">
+        </activity>
     </application>
 
 </manifest>

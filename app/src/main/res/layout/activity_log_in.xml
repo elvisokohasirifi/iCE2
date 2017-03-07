@@ -60,7 +60,7 @@
         tools:paddingTop="16dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:onClick="logIn (LogIn)"
+        android:onClick="onTap"
         android:textColor="@color/colorAccent"
         android:background="@android:color/white"
         android:textAlignment="center" />

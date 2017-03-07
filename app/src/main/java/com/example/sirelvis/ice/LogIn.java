@@ -39,6 +39,6 @@ public class LogIn extends Activity {
 
     public void signUp(View v){
         //super.onCreate(savedInstanceState);
-        setContentView(R.layout.signup);
+        startActivity(new Intent(LogIn.this, SignUp.class));
     }
 }
