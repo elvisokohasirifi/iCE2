@@ -3,17 +3,92 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:weightSum="1">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:src="@mipmap/ic_launcher"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:layout_weight="0.17" />
-    </LinearLayout>
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_weight="0.04"
+                android:hint="Name"
+                android:layout_marginTop="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:weightSum="1"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:text="Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton2"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:text="Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="58dp"
+                    android:id="@+id/radioButton"
+                    android:checked="false"
+                    android:layout_weight="0.17"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/editText7"
+                android:layout_weight="0.06"
+                android:layout_marginTop="20dp"
+                android:hint="Phone" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editText8"
+                android:layout_weight="0.07"
+                android:layout_marginTop="20dp"
+                android:hint="Email" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText9"
+                android:layout_weight="0.08"
+                android:hint="Password"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText10"
+                android:layout_weight="0.17"
+                android:hint="Confirm Password"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
