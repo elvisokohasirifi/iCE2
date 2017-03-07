@@ -1,13 +1,17 @@
 package com.example.sirelvis.ice;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.sirelvis.ice.layout.Welcome;
 
 public class LogIn extends Activity {
 
@@ -18,6 +22,14 @@ public class LogIn extends Activity {
         setContentView(R.layout.activity_log_in);
         //showed = (TextView) findViewById(R.id.display);
         final Button logIn = (Button) findViewById(R.id.logInBut);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent welcome = new Intent(LogIn.this, Welcome.class);
+                startActivity(welcome);
+                finish();
+            }
+        }, 5000);
     }
 
     public void logIn(View v){
