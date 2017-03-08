@@ -1,5 +1,6 @@
 package com.example.sirelvis.ice;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ public class LogIn extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        ActionBar actionBar = getActionBar();
+        actionBar.hide();
         setContentView(R.layout.activity_log_in);
         //final Button logIn = (Button) findViewById(R.id.logInBut);
 
@@ -40,5 +43,9 @@ public class LogIn extends Activity {
     public void signUp(View v){
         //super.onCreate(savedInstanceState);
         startActivity(new Intent(LogIn.this, SignUp.class));
+    }
+
+    public void resetPassword(View v){
+        startActivity(new Intent(LogIn.this, ForgotPassword.class));
     }
 }

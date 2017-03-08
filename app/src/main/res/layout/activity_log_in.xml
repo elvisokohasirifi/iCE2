@@ -34,7 +34,8 @@
         tools:paddingTop="16dp"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/white"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -48,7 +49,8 @@
         tools:paddingTop="16dp"
         android:layout_marginTop="20dp"
         android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white" />
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"/>
 
     <Button
         android:text="Sign In"
@@ -98,9 +100,9 @@
             android:layout_gravity="end"
             tools:textColorHighlight="@color/colorAccent"
             android:clickable="true"
-            android:onClick="sendPassword"
             android:textColor="@android:color/white"
-            android:layout_weight="0.60" />
+            android:layout_weight="0.60"
+            android:onClick="resetPassword" />
 
     </LinearLayout>
 

@@ -29,7 +29,8 @@
                 android:paddingRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/white"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -82,7 +83,8 @@
                 android:paddingRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/white"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -98,7 +100,8 @@
                 android:paddingRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/white"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -114,7 +117,8 @@
                 android:paddingRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/white"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -130,7 +134,8 @@
                 android:paddingRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/white"/>
 
             <View
                 android:id="@+id/SplitLine_hor1"
@@ -163,7 +168,8 @@
                 android:paddingRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/white"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -178,7 +184,8 @@
                 android:paddingRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/white"/>
 
             <Button
                 android:text="Sign Up"

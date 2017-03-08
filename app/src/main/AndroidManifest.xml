@@ -17,11 +17,17 @@
         </activity>
         <activity
             android:name=".LogIn"
-            android:label="Log In">
-        </activity>
+            android:label="Log In" />
         <activity
             android:name=".SignUp"
-            android:label="Sign Up">
+            android:label="Sign Up" />
+        <activity
+            android:name=".ForgotPassword"
+            android:label="Forgot Password"
+            android:parentActivityName=".LogIn">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sirelvis.ice.LogIn" />
         </activity>
     </application>
 

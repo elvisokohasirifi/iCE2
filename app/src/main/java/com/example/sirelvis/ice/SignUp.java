@@ -1,5 +1,6 @@
 package com.example.sirelvis.ice;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,8 @@ public class SignUp extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        ActionBar actionBar = getActionBar();
+        actionBar.hide();
         setContentView(R.layout.signup);
         //final Button logIn = (Button) findViewById(R.id.logInBut);
     }
