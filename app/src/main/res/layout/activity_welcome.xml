@@ -26,17 +26,20 @@
             android:id="@+id/imageView2"
             android:scaleX="0.4"
             android:scaleY="0.4"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.39" />
 
         <TextView
-            android:text="WELCOME"
+            android:text="your security, our priority..."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
             android:layout_weight="0.09"
             android:textColor="@color/colorAccent"
-            android:textSize="35sp"
-            android:textAlignment="center" />
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:fontFamily="cursive"
+            android:textStyle="normal|bold|italic" />
 
         <ProgressBar
             style="?android:attr/progressBarStyle"
